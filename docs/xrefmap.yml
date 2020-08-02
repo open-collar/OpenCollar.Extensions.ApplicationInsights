@@ -1,0 +1,41 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: OpenCollar.Extensions.Logging
+  name: OpenCollar.Extensions.Logging
+  href: api/OpenCollar.Extensions.Logging.html
+  commentId: N:OpenCollar.Extensions.Logging
+  fullName: OpenCollar.Extensions.Logging
+  nameWithType: OpenCollar.Extensions.Logging
+- uid: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer
+  name: ApplicationInsightsTelemeteryInitializer
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html
+  commentId: T:OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer
+  fullName: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer
+  nameWithType: ApplicationInsightsTelemeteryInitializer
+- uid: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.#ctor
+  name: ApplicationInsightsTelemeteryInitializer()
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_ApplicationInsightsTelemeteryInitializer__ctor
+  commentId: M:OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.#ctor
+  fullName: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.ApplicationInsightsTelemeteryInitializer()
+  nameWithType: ApplicationInsightsTelemeteryInitializer.ApplicationInsightsTelemeteryInitializer()
+- uid: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.#ctor*
+  name: ApplicationInsightsTelemeteryInitializer
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_ApplicationInsightsTelemeteryInitializer__ctor_
+  commentId: Overload:OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.#ctor
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.ApplicationInsightsTelemeteryInitializer
+  nameWithType: ApplicationInsightsTelemeteryInitializer.ApplicationInsightsTelemeteryInitializer
+- uid: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  name: Initialize(ITelemetry)
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_ApplicationInsightsTelemeteryInitializer_Initialize_Microsoft_ApplicationInsights_Channel_ITelemetry_
+  commentId: M:OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  fullName: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize(Microsoft.ApplicationInsights.Channel.ITelemetry)
+  nameWithType: ApplicationInsightsTelemeteryInitializer.Initialize(ITelemetry)
+- uid: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize*
+  name: Initialize
+  href: api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html#OpenCollar_Extensions_Logging_ApplicationInsightsTelemeteryInitializer_Initialize_
+  commentId: Overload:OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize
+  isSpec: "True"
+  fullName: OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.Initialize
+  nameWithType: ApplicationInsightsTelemeteryInitializer.Initialize
