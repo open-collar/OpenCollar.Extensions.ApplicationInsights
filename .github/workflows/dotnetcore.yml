@@ -59,7 +59,7 @@ jobs:
         cd docs
         git grep -lz 'BUILD_VERSION' | xargs -0 sed -i -e "s/BUILD_VERSION/$VERSION/g"
         cd ..
-      
+
     - name: Commit changes (documentation)
       if: github.ref == 'refs/heads/trunk'
       run: |
@@ -79,4 +79,3 @@ jobs:
       run: |
         echo "Pubishing version: $VERSION$SUFFIX"
         dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_DEPLOY_KEY}} --source https://api.nuget.org/v3/index.json
-
