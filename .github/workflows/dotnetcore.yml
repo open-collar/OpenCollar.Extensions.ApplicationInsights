@@ -48,7 +48,7 @@ jobs:
         dotnet test --configuration Release -p:Version="$VERSION" -p:CollectCoverage=true -p:CoverletOutput=/home/runner/work/OpenCollar.Extensions.ApplicationInsights/OpenCollar.Extensions.ApplicationInsights/coverage/ -p:CoverletOutputFormat=lcov -p:ExcludeByFile="**/*.designer.cs"
 
     - name: Coveralls
-      uses: coverallsapp/github-action@trunk
+      uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: /home/runner/work/OpenCollar.Extensions.ApplicationInsights/OpenCollar.Extensions.ApplicationInsights/coverage/coverage.info
