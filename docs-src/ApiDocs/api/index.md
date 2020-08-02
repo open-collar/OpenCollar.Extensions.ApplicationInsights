@@ -1,6 +1,6 @@
 # OpenCollar.Extensions.ApplicationInsights
 
-The purpose of the libarary is to provide extensions and types supporting threading.
+The purpose of the libarary is to provide extensions and types supporting Azure Application Insights.
 
 ## NuGet Package Installation
 

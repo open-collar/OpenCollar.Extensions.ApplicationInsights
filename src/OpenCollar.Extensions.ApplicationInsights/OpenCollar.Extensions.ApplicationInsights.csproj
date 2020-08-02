@@ -13,7 +13,7 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <Authors>Jonathan David Evans (jevans@open-collar.org.uk)</Authors>
-        <Description>The purpose of the libarary is to provide extensions and types supporting threading.</Description>
+        <Description>The purpose of the libarary is to provide extensions and types supporting Azure Application Insights.</Description>
         <Copyright>Copyright © 2019-2020 Jonathan Evans (jevans@open-collar.org.uk).</Copyright>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageProjectUrl>https://open-collar.github.io/OpenCollar.Extensions.ApplicationInsights/index.html</PackageProjectUrl>
@@ -27,15 +27,15 @@
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
+    <ItemGroup>
+        <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
         <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
-    <PackageReference Include="OpenCollar.Extensions.Logging" Version="0.4.4" />
-  </ItemGroup>
+        <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
+        <PackageReference Include="OpenCollar.Extensions.Logging" Version="0.4.4" />
+    </ItemGroup>
 
     <ItemGroup>
         <None Include="..\..\LICENSE">

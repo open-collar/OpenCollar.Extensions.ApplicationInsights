@@ -17,7 +17,7 @@
 
 
 
-The purpose of the libarary is to provide extensions and types supporting threading.
+The purpose of the libarary is to provide extensions and types supporting Azure Application Insights.
 
  * [API Documentation](https://open-collar.github.io/OpenCollar.Extensions.ApplicationInsights/)
  * View package in [nuget.org](https://nuget.org) at: https://www.nuget.org/packages/OpenCollar.Extensions.ApplicationInsights/
@@ -62,6 +62,7 @@ There are no hard dependencies on tooling, all that is required is the
 # Related Projects
 
 * [OpenCollar.Extensions](https://github.com/open-collar/OpenCollar.Extensions)
+* [OpenCollar.Extensions.ApplicationInsights](https://github.com/open-collar/OpenCollar.Extensions.ApplicationInsights)
 * [OpenCollar.Extensions.Collections](https://github.com/open-collar/OpenCollar.Extensions.Collections)
 * [OpenCollar.Extensions.Configuraton](https://github.com/open-collar/OpenCollar.Extensions.Configuraton)
 * [OpenCollar.Extensions.Environment](https://github.com/open-collar/OpenCollar.Extensions.Environment)
