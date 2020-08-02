@@ -48,7 +48,7 @@ jobs:
         dotnet test --configuration Release -p:Version="$VERSION" -p:CollectCoverage=true -p:CoverletOutput=/home/runner/work/OpenCollar.Extensions.ApplicationInsights/OpenCollar.Extensions.ApplicationInsights/coverage/ -p:CoverletOutputFormat=lcov -p:ExcludeByFile="**/*.designer.cs"
 
     - name: Coveralls
-      uses: coverallsapp/github-action@master
+      uses: coverallsapp/github-action@trunk
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: /home/runner/work/OpenCollar.Extensions.ApplicationInsights/OpenCollar.Extensions.ApplicationInsights/coverage/coverage.info
@@ -61,7 +61,7 @@ jobs:
         cd ..
       
     - name: Commit changes (documentation)
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/trunk'
       run: |
         git config --local user.email "jevans@open-collar.org.uk"
         git config --local user.name "Jonathan Evans"
@@ -70,12 +70,12 @@ jobs:
       
     - name: Push changes (documentation)
       uses: ad-m/github-push-action@v0.5.0
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/trunk'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
       
     - name: Publish
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/trunk'
       run: |
         echo "Pubishing version: $VERSION$SUFFIX"
         dotnet nuget push **/*.nupkg --api-key ${{secrets.NUGET_DEPLOY_KEY}} --source https://api.nuget.org/v3/index.json
