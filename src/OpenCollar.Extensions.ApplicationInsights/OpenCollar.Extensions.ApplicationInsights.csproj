@@ -34,7 +34,7 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.ApplicationInsights" Version="2.14.0" />
-        <PackageReference Include="OpenCollar.Extensions.Logging" Version="0.4.4" />
+        <PackageReference Include="OpenCollar.Extensions.Logging" Version="0.4.7" />
     </ItemGroup>
 
     <ItemGroup>

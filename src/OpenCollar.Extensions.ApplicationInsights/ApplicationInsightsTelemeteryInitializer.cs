@@ -35,7 +35,7 @@ namespace OpenCollar.Extensions.Logging
         /// </summary>
         public ApplicationInsightsTelemeteryInitializer()
         {
-            LoggerExtensions.ContextualInformationAppenderInitialized = true;
+            LoggerExtensions.AppendContextualInformationToLogMessages = false;
         }
 
         /// <summary>
@@ -46,35 +46,35 @@ namespace OpenCollar.Extensions.Logging
         /// </param>
         public void Initialize(ITelemetry telemetry)
         {
-            LoggerExtensions.ContextualInformationAppenderInitialized = true;
+            LoggerExtensions.AppendContextualInformationToLogMessages = false;
 
             try
             {
-                if (ReferenceEquals(telemetry, null))
+                if(ReferenceEquals(telemetry, null))
                 {
                     return;
                 }
 
                 var telemeteryContext = telemetry.Context;
-                if (ReferenceEquals(telemeteryContext, null))
+                if(ReferenceEquals(telemeteryContext, null))
                 {
                     return;
                 }
 
                 var properties = telemeteryContext.GlobalProperties;
-                if (ReferenceEquals(properties, null))
+                if(ReferenceEquals(properties, null))
                 {
                     return;
                 }
 
-                var context = OpenCollar.Extensions.Logging.LoggingContext.GetContext();
+                var context = OpenCollar.Extensions.Logging.LoggingContext.Current();
                 var snapshot = context.GetSnapshot();
-                if (snapshot.Length <= 0)
+                if(snapshot.Length <= 0)
                 {
                     return;
                 }
 
-                foreach (var pair in snapshot)
+                foreach(var pair in snapshot)
                 {
                     properties[@"Wtw.Crb.CarrierPortal." + pair.Key] = pair.Value;
                 }
