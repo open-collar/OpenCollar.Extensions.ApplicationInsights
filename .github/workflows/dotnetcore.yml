@@ -41,10 +41,10 @@ jobs:
         VERSION_MINOR=$(<.version/minor.txt)
         echo "$VERSION_MAJOR.$VERSION_MINOR.$VERSION_REVISION" > .version/version.txt
         VERSION=$(<.version/version.txt)
-        echo "VERSION_REVISION=VERSION_REVISION" >> $GITHUB_ENV
-        echo "VERSION_MAJOR=VERSION_MAJOR" >> $GITHUB_ENV
-        echo "VERSION_MINOR=VERSION_MINOR" >> $GITHUB_ENV
-        echo "VERSION=VERSION" >> $GITHUB_ENV
+        echo "VERSION_REVISION=$VERSION_REVISION" >> $GITHUB_ENV
+        echo "VERSION_MAJOR=$VERSION_MAJOR" >> $GITHUB_ENV
+        echo "VERSION_MINOR=$VERSION_MINOR" >> $GITHUB_ENV
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
         echo "Revision: $VERSION_REVISION"
         echo "Major version: $VERSION_MAJOR"
         echo "Minor version: $VERSION_MINOR"
