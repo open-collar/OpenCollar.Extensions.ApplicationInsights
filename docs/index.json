@@ -1,4 +1,19 @@
 {
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "OpenCollar.Extensions.ApplicationInsights | API Documentation",
+    "keywords": "OpenCollar.Extensions.ApplicationInsights The purpose of the libarary is to provide extensions and types supporting Azure Application Insights. NuGet Package Installation Package and installation instructions at: https://www.nuget.org/packages/OpenCollar.Extensions.ApplicationInsights/"
+  },
+  "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html": {
+    "href": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html",
+    "title": "Class ApplicationInsightsTelemeteryInitializer | API Documentation",
+    "keywords": "Class ApplicationInsightsTelemeteryInitializer A telemetry initializer that adds the contextual information captured by the OpenCollar.Extensions.Logging.LoggingContext into the custom data recorded by the ApplicationInsights logger. This makes it easier to search and filter by these values in the online tools. Inheritance System.Object ApplicationInsightsTelemeteryInitializer Implements Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer Namespace : OpenCollar.Extensions.Logging Assembly : OpenCollar.Extensions.ApplicationInsights.dll Syntax public sealed class ApplicationInsightsTelemeteryInitializer : ITelemetryInitializer Constructors | Improve this Doc View Source ApplicationInsightsTelemeteryInitializer() Initializes a new instance of the ApplicationInsightsTelemeteryInitializer class. Declaration public ApplicationInsightsTelemeteryInitializer() Methods | Improve this Doc View Source Initialize(ITelemetry) Initializes properties of the specified ApplicationInsightsTelemeteryInitializer object. Declaration public void Initialize(ITelemetry telemetry) Parameters Type Name Description Microsoft.ApplicationInsights.Channel.ITelemetry telemetry The telemetery object to which to append our custom values. Implements Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer See Also Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer"
+  },
+  "api/OpenCollar.Extensions.Logging.html": {
+    "href": "api/OpenCollar.Extensions.Logging.html",
+    "title": "Namespace OpenCollar.Extensions.Logging | API Documentation",
+    "keywords": "Namespace OpenCollar.Extensions.Logging Classes ApplicationInsightsTelemeteryInitializer A telemetry initializer that adds the contextual information captured by the OpenCollar.Extensions.Logging.LoggingContext into the custom data recorded by the ApplicationInsights logger. This makes it easier to search and filter by these values in the online tools."
+  },
   "index.html": {
     "href": "index.html",
     "title": "OpenCollar.Extensions.ApplicationInsights | API Documentation",
@@ -8,20 +23,5 @@
     "href": "usage/index.html",
     "title": "Basics | API Documentation",
     "keywords": "Basics The purpose of the libarary is to provide simple and concise extension methods that allow arguments and state to be validated efficiently at runtime."
-  },
-  "api/index.html": {
-    "href": "api/index.html",
-    "title": "OpenCollar.Extensions.ApplicationInsights | API Documentation",
-    "keywords": "OpenCollar.Extensions.ApplicationInsights The purpose of the libarary is to provide extensions and types supporting Azure Application Insights. NuGet Package Installation Package and installation instructions at: https://www.nuget.org/packages/OpenCollar.Extensions.ApplicationInsights/"
-  },
-  "api/OpenCollar.Extensions.Logging.html": {
-    "href": "api/OpenCollar.Extensions.Logging.html",
-    "title": "Namespace OpenCollar.Extensions.Logging | API Documentation",
-    "keywords": "Namespace OpenCollar.Extensions.Logging Classes ApplicationInsightsTelemeteryInitializer A telemetry initializer that adds the contextual information captured by the OpenCollar.Extensions.Logging.LoggingContext into the custom data recorded by the ApplicationInsights logger. This makes it easier to search and filter by these values in the online tools."
-  },
-  "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html": {
-    "href": "api/OpenCollar.Extensions.Logging.ApplicationInsightsTelemeteryInitializer.html",
-    "title": "Class ApplicationInsightsTelemeteryInitializer | API Documentation",
-    "keywords": "Class ApplicationInsightsTelemeteryInitializer A telemetry initializer that adds the contextual information captured by the OpenCollar.Extensions.Logging.LoggingContext into the custom data recorded by the ApplicationInsights logger. This makes it easier to search and filter by these values in the online tools. Inheritance System.Object ApplicationInsightsTelemeteryInitializer Implements Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer Namespace : OpenCollar.Extensions.Logging Assembly : OpenCollar.Extensions.ApplicationInsights.dll Syntax public sealed class ApplicationInsightsTelemeteryInitializer : ITelemetryInitializer Constructors | Improve this Doc View Source ApplicationInsightsTelemeteryInitializer() Initializes a new instance of the ApplicationInsightsTelemeteryInitializer class. Declaration public ApplicationInsightsTelemeteryInitializer() Methods | Improve this Doc View Source Initialize(ITelemetry) Initializes properties of the specified ApplicationInsightsTelemeteryInitializer object. Declaration public void Initialize(ITelemetry telemetry) Parameters Type Name Description Microsoft.ApplicationInsights.Channel.ITelemetry telemetry The telemetery object to which to append our custom values. Implements Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer See Also Microsoft.ApplicationInsights.Extensibility.ITelemetryInitializer"
   }
 }
