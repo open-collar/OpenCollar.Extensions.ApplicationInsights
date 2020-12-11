@@ -17,12 +17,16 @@ jobs:
     - name: Get branch name (merge)
       if: github.event_name != 'pull_request'
       shell: bash
-      run: echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV
+      run: |
+        echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_REF#refs/heads/} | tr / -)" >> $GITHUB_ENV        
+        echo "Branch: $DOCFX_SOURCE_BRANCH_NAME"
 
     - name: Get branch name (pull request)
       if: github.event_name == 'pull_request'
       shell: bash
-      run: echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_ENV
+      run: |
+        echo "DOCFX_SOURCE_BRANCH_NAME=$(echo ${GITHUB_HEAD_REF} | tr / -)" >> $GITHUB_ENV
+        echo "Branch: $DOCFX_SOURCE_BRANCH_NAME"
 
     - name: Generate revision number
       uses: einaregilsson/build-number@v3 
